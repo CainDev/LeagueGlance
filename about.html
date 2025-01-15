@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="About LeagueGlance.com the free Summoner look-up tool.">
+    <meta name="author" content="Cain 😎">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta property="og:image" content="/assets/LeagueGlanceLogo.png" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <title>LoL Name Look-up</title>
+    <link rel="stylesheet" href="assets/css/styles.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/modal.css?v=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc55f6e00b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="modal" id="modal">
+        <div class="report-modal-content">
+            <div class="report-modal-header">
+                <div class="report-modal-close"><i class="fas fa-times" onclick="return closeModal(1)"></i></div>
+                <h2>Report</h2>
+            </div>
+
+            <div class="report-modal-body">
+                <p>If you have any issues or bugs you'd like to report. You can email me here: report@leagueglance.com
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel" id="panel">
+        <div class="header">
+            <div class="headerText">
+                LeagueGlance
+            </div>
+
+            <div class="links">
+                <a id="header-link" href="http://leagueglance.com/">Search</a> -
+                <a id="header-link" href="purchase">Bored of searching?</a> -
+                <a id="header-link" href="about">About Us</a> -
+                <a id="header-link" href="privacy">Privacy Policy</a>
+            </div>
+        </div>
+
+        <hr class="break">
+
+        <p class="leagueglance-desc">
+            LeagueGlance.com was created as a learning project as I was a purely back-end developer. So its extremely
+            rough around
+            the edges but I hope you enjoy using it!
+        </p>
+
+        <p class="leagueglance-desc">
+            If you want to support me and get yourself a cool new name you can purchase one <small>(for very cheap,
+                nothing is
+                more than $20)</small> that we already claimed!
+            <br><br>
+            <a href="purchase">Open List of Names</a>
+        </p>
+
+        <div class="panel-footer">
+            <p>Made with 💓 by <b>Cain</b></p>
+        </div>
+    </div>
+
+    <div class="footer-notice">All backgrounds, data and avatars used are property of <br>League of Legends © <a
+            href="https://www.riotgames.com/en">Riot
+            Games</a>,
+        Inc.
+    </div>
+    <div class="footer-icons">
+        <!-- <i class="fas fa-cogs" onclick="return openModal(3)"></i>
+    //<i class="fas fa-bug" onclick="return openModal(2)"></i> -->
+        <i class="fas fa-flag" onclick="return openModal(1)"></i>
+    </div>
+
+    <script src="assets/js/text-validation.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/random.js"></script>
+    <script>
+        setBackground();
+    </script>
+</body>
+
+</html>

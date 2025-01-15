@@ -1,0 +1,53 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.report-modal-content {
+    position: relative;
+    -webkit-box-shadow: 0px 2px 11px 2px rgba(0,0,0,0.52); 
+    box-shadow: 0px 2px 11px 2px rgba(0,0,0,0.52);
+    background: linear-gradient(180deg, rgba(255,253,253, 0.9) 0%, rgba(233,233,233,1) 100%);
+    margin: 15% auto;
+    border: 0.5px ridge white;
+    width: 37%;
+    padding: 25px;
+    animation-name: animatetop;
+    animation-duration: 0.8s
+}
+
+.modal .report-modal-content
+.report-modal-header {
+    font-size: 25px;
+}
+
+.modal .report-modal-content
+.report-modal-header .report-modal-close {
+    float: right;
+}
+
+.modal .report-modal-content
+.report-modal-header .report-modal-close:hover {
+    opacity: 20%;
+    cursor: pointer;
+}
+
+.modal .report-modal-content
+.report-modal-body {
+    font-size: 15px;
+    padding: 5px 30px;
+    /*border: 1px solid black;*/
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
